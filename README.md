@@ -52,7 +52,7 @@
 
 *Микросервисы*
 ```
-/auth
+/auth // все что связано с авторизацией -> классика
 	/src
 		/components
 			Login.js
@@ -65,7 +65,7 @@
 			/auth-form
 			/login
 
-/mainPage
+/mainPage // главная страница (авторизованная зона) -> проще для написанного api, App, проще тестировать, вносить изменения
 	/src
 		/components
 			Main.js
@@ -85,7 +85,7 @@
 			/profile
 
 
-/popups
+/popups // все попапы -> один шаблон, одни стили
 	/src
 		/components
 			PopupWithForm.js
@@ -102,7 +102,7 @@
 		/blocks
 			/popup
 
-/prelogin
+/prelogin // все что до авторизации (зона прелогина) -> проще вносить изменения, тестировать
 	/src
 		/components
 			ProtectedRoute.js
